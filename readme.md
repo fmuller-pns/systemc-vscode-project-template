@@ -2,11 +2,24 @@
 
 ## Getting Started
 
-We consider that SystemC, Visual Studio Code environment and GTKWave is installed on the computer.
+### Install prerequisites
+We must install SystemC, Visual Studio Code environment and GTKWave on the computer.
+
 For more details, see:  
 - https://www.accellera.org/downloads/standards/systemc
+
+  To better debug, use the command below with option at step 5 (Configure the package for your system)
+```bash
+../configure --enable-debug
+```
 - https://code.visualstudio.com/
-- http://gtkwave.sourceforge.net/ (install for linux: sudo apt install gtkwave)
+- http://gtkwave.sourceforge.net/ 
+
+   Tip for Linux installation:
+```bash
+sudo apt install gtkwave
+```
+### Using SystemC Template Project
 
 Firstly, you have to clone the `systemc-vscode-project-template` project and follow the next steps.
 ```bash

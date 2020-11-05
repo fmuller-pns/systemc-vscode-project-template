@@ -1,0 +1,110 @@
+{
+    "tasks": [
+        {
+            "label": "SystemC - Build",
+            "type": "shell",
+            "windows": {
+                "command": "powershell",
+                "args": [
+                    "-c",
+                    "'mingw32-make all'"
+                ]
+            },
+            "linux": {
+                "command": "bash",
+                "args": [
+                    "-c",
+                    "'make all'"
+                ]
+            },
+            "osx": {
+                "command": "bash",
+                "args": [
+                    "-c",
+                    "'make all'"
+                ]
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "showReuseMessage": true,
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true,
+                "focus": true
+              }
+        },
+        {
+            "label": "SystemC - Run",
+            "type": "shell",
+            "command": "make run",
+            "problemMatcher": [],
+            "presentation": {
+                "showReuseMessage": true,
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true,
+                "focus": true
+              }
+        },
+        {
+            "label": "SystemC - Run GTKWave",
+            "type": "shell",
+            "command": "make gtkwave",
+            "problemMatcher": [],
+            "presentation": {
+                "showReuseMessage": true,
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true,
+                "focus": true
+              }
+        },
+        {
+            "label": "SystemC - Clean",
+            "type": "shell",
+            "windows": {
+                "command": "powershell",
+                "args": [
+                    "-c",
+                    "'mingw32-make clean'"
+                ]
+            },
+            "linux": {
+                "command": "bash",
+                "args": [
+                    "-c",
+                    "'make clean'"
+                ]
+            },
+            "osx": {
+                "command": "bash",
+                "args": [
+                    "-c",
+                    "'make clean'"
+                ]
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "showReuseMessage": true,
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true,
+                "focus": true
+              }
+        },
+        {
+            "label": "SystemC - Doxygen - HTML doc.",
+            "type": "shell",
+            "command": "doxygen",
+            "problemMatcher": [],
+            "presentation": {
+                "showReuseMessage": true,
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true,
+                "focus": false
+              }
+        }
+    ],
+    "version": "2.0.0"
+}

@@ -1,0 +1,12 @@
+{
+    "terminal.integrated.shell.linux":"/bin/bash",
+    "terminal.integrated.shellArgs.linux": [
+        "--init-file", 
+        "systemc_env.sh",
+        "-i",
+    ],
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
+}

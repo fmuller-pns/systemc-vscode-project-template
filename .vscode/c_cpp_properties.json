@@ -1,0 +1,29 @@
+{
+    "env": {
+        // Change if necessary SystemC path
+        "SYSTEMC_PATH": "~/systemc/systemc"
+    },
+    "configurations": [
+        {
+            "name": "systemc",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "${env:SYSTEMC_PATH}/src",
+                    "${env:SYSTEMC_PATH}/include"
+                ],
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "${workspaceFolder}/**",
+		        "${env:SYSTEMC_PATH}/src/**",
+                "${env:SYSTEMC_PATH}/include/**"
+            ],
+            "defines": [],
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

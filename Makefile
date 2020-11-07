@@ -1,19 +1,22 @@
 #### Configuration  ###################
 
-# define Executable
-EXE	:= build/main
+# define executable file
+EXE	:= main
+
+# define directory of executable file
+EXEDIR := build
 
 # define source directory
-SRC	:= src
+SRCDIR	:= src
 
 # define include directory
-INCLUDE	:= src
+INCLUDEDIR	:= src
 
 # define object directory
-OBJ	:= build
+OBJDIR	:= build
 
 # define dependency directory
-DEP	:= build
+DEPDIR	:= build
 
 # define lib directory
 LIBDIRS := $(SYSTEMC_LIB_PATH)
@@ -24,23 +27,18 @@ LIBFILES := systemc
 ########################################
 
 # output binary
-BIN := $(EXE)
+BIN := $(EXEDIR)/$(EXE)
 
 # includes directories
-INCLUDEDIRS	:= $(SYSTEMC_PATH)/include $(shell find $(INCLUDE) -type d)
+INCLUDEDIRS	:= $(SYSTEMC_PATH)/include $(shell find $(INCLUDEDIR) -type d)
 INCLUDES := $(patsubst %,-I%, $(INCLUDEDIRS:%/=%))
 
 # source files
-SOURCEDIRS	:= $(shell find $(SRC) -type d)
+SOURCEDIRS	:= $(shell find $(SRCDIR) -type d)
 SRCS := $(wildcard $(patsubst %,%/*.cpp, $(SOURCEDIRS)))
 
 # C/C++ libs
 LIBS := $(patsubst %,-L%, $(LIBDIRS:%/=%)) $(patsubst %,-l%, $(LIBFILES:%/=%)) 
-
-# intermediate directory for generated object files
-OBJDIR := $(OBJ)
-# intermediate directory for generated dependency files
-DEPDIR := $(DEP)
 
 # object files, auto generated from source files
 OBJS := $(patsubst %,$(OBJDIR)/%.o,$(basename $(SRCS)))

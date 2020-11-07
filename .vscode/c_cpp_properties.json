@@ -1,6 +1,5 @@
 {
     "env": {
-        // Change if necessary SystemC path
         "SYSTEMC_PATH": "~/systemc/systemc"
     },
     "configurations": [

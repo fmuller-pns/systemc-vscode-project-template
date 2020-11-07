@@ -53,21 +53,21 @@ cat systemc_env.sh >> ~/.bashrc
 ```bash
 source systemc_env.sh
 ```
-#### 5. Open Visual Studio Code for the new project
+#### 6. Open Visual Studio Code for the new project
 ```bash
 code .
 ```
-#### 6. Verify path in the `c_cpp_properties.json` file and change them if wrong.
+#### 7. Verify path in the `c_cpp_properties.json` file and change them if wrong.
 ```json
 "SYSTEMC_PATH": "~/systemc/systemc"
 ```
 
-#### 7. [Not required] Change the default project name called `main` in files.
+#### 8. [Not required] Change the default project name called `main` in files.
 This step renames the executable file. By default, the executable file is `main`.
 1. Open `Makefile` and replace `main` by <my_project_name>
 2. Open `.vscode/launch.json` and replace `main` by <my_project_name> (lines 13)
 
-#### 8. Building and running project
+#### 9. Building and running project
 In the Menu, Run `Start Debugging` or `Run Without Debbuging`
 
 To exit monitoring, typing `Ctrl+AltGr+]`

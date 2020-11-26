@@ -25,7 +25,7 @@ $ tar -zxvf systemc-2.3.3.tar.gz
 ```bash
 $ mv systemc-2.3.3 systemc
 ``` 
-#### 2. To better debug, use the command below with option at step 5 (Configure the package for your system)
+#### 2. Follow the INSTALL text file to install SystemC. To better debug, use the command below with option at step 5 in INSTALL file (Configure the package for your system)
 ```bash
 $ ../configure --enable-debug
 ```

@@ -8,6 +8,11 @@ We must install SystemC, Visual Studio Code environment and GTKWave on the compu
 For more details, see:  
 - https://www.accellera.org/downloads/standards/systemc
 
+As of VS-code v1.56.1 integrated terminals require additional configuration to work correctly. see https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations to edit the `setting.json` file and add the following entry:
+```bash
+"terminal.integrated.allowWorkspaceConfiguration":true
+```
+
 #### 1. To use project template without modification path, install SystemC in `~/systemc/systemc` as below:
 1. Create folder:
 ```bash

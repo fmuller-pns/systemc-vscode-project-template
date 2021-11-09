@@ -6,33 +6,27 @@
  ****************************************************************************/
 
 /**
- * @file main.c
+ * @file helper_fct.h
  * @author Fabrice Muller
  * @date 02 Nov. 2021
- * @brief Empty main program for SystemC
+ * @brief Formatted display macro for SystemC
  *
  * @see https://github.com/fmuller-pns/systemc-vscode-project-template.git
  */
 
+#ifndef _HELPER_FCT_H_
+#define _HELPER_FCT_H_
+
 #include <systemc.h>
-#include "helper_fct.h"
 
-int sc_main(int argc, char* argv[]) {
+/*
+ * Examples:
+ *
+ * DISPLAY("Hello");
+ * DISPLAY("N = " << myfloatvar << ", S = " << myintegervar);
+ * 
+*/
 
-	/* Elaboration step */
-	DISPLAY("ELABORATION");
+#define DISPLAY(msg) cout << sc_time_stamp() << ":\t"  << msg << endl;
 
-
-
-	/* Simulation step */
-	DISPLAY("START SIMULATION");
-
-	sc_start();
-
-	/* End of Simulation */
-	DISPLAY("END OF SIMULATION");
-				
-	return 0;
-}
-
-
+#endif

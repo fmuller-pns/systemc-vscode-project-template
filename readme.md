@@ -5,10 +5,11 @@
 ### Install prerequisites
 We must install SystemC, Visual Studio Code environment and GTKWave on the computer.
 
-For more details, see:  
-- https://www.accellera.org/downloads/standards/systemc
+* For more details for SystemC, see: https://www.accellera.org/downloads/standards/systemc
 
-As of VS-code v1.56.1 integrated terminals require additional configuration to work correctly. see https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations to edit the `setting.json` file and add the following entry:
+* In Visual Studio Code, check that the C/C++ extension is installed. If this is not the case, go to the "extension" menu and click on "Install".
+
+* As of VS-code v1.56.1 integrated terminals require additional configuration to work correctly. see https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations to edit the `setting.json` file and add the following entry:
 ```bash
 "terminal.integrated.allowWorkspaceConfiguration":true
 ```

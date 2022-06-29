@@ -59,7 +59,7 @@ LD := g++
 # C flags
 CFLAGS := -std=c11
 # C++ flags
-CXXFLAGS := -std=c++14
+CXXFLAGS :=
 # C/C++ flags
 CPPFLAGS := -g -Wall -Wextra -pedantic
 # linker flags

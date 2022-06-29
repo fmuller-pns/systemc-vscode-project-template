@@ -1,6 +1,9 @@
 # Production folder
 build/
 
+# Log
+*.log
+
 # Value change dump files
 *.vcd
 

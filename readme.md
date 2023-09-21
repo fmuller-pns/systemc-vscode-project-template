@@ -17,23 +17,23 @@ We must install SystemC, Visual Studio Code environment and GTKWave on the compu
 #### 1. To use project template without modification path, install SystemC in `~/systemc/systemc` as below:
 1. Create folder:
 ```bash
-$ cd ~
-$ mkdir systemc
-$ cd systemc
+cd ~
+mkdir systemc
+cd systemc
 ```
 2. Copy the `systemc-2.3.3.zip` or `systemc-2.3.3.tar.gz` file in the `~/systemc` folder and unzip as below:
 ```bash
-$ unzip systemc-2.3.3.zip
+unzip systemc-2.3.3.zip
 or
-$ tar -zxvf systemc-2.3.3.tar.gz 
+tar -zxvf systemc-2.3.3.tar.gz 
 ``` 
 3. Rename the folder:
 ```bash
-$ mv systemc-2.3.3 systemc
+mv systemc-2.3.3 systemc
 ``` 
 #### 2. Follow the INSTALL text file to install SystemC. To better debug, use the command below with option at step 5 in INSTALL file (Configure the package for your system)
 ```bash
-$ ../configure --enable-debug
+../configure --enable-debug
 ```
 - https://code.visualstudio.com/
 - http://gtkwave.sourceforge.net/ 
